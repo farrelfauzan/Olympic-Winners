@@ -1,0 +1,23 @@
+{
+  "name": "olympic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start":"nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:download": "sequelize-auto -h 127.0.0.1 -d olympic_winner -u root -x toor -p 3306 --dialect mysql -c config/config.json -o models/ -t"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.19.0"
+  },
+  "devDependencies": {
+    "sequelize-auto": "^0.8.8"
+  }
+}
